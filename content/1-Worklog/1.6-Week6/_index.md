@@ -1,57 +1,57 @@
 ---
 title: "Week 6 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# Week 6 — Databases: Amazon RDS and DynamoDB
 
-### Week 6 Objectives:
+## Weekly objective
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Choose a relational or NoSQL database based on access patterns and system requirements.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Learning plan
 
+| Session | Theory topic |
+|---:|---|
+| 1 | Relational and NoSQL databases; schemas, transactions, ACID, and indexing. |
+| 2 | RDS instances, storage, backups, DB subnet groups, and connectivity. |
+| 3 | Multi-AZ versus read replicas; high availability versus read scaling. |
+| 4 | DynamoDB tables, items, partition keys, sort keys, Query, Scan, and GSIs. |
+| 5 | On-demand/provisioned capacity, TTL, backups, cost, and a decision matrix. |
 
-### Week 6 Achievements:
+## Setup to understand
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Review the configuration fields used to create RDS and DynamoDB resources. Documentation or Console observation is sufficient; no database must be created.
 
-* Successfully created and configured an AWS Free Tier account.
+## Basic commands to understand
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+The commands below are for recognizing syntax and purpose; they do not need to be run without a suitable environment and permissions.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+```bash
+aws rds describe-db-instances
+aws dynamodb list-tables
+aws dynamodb describe-table --table-name TABLE_NAME
+```
 
-* Used AWS CLI to perform basic operations such as:
+## Learning outcomes
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+- Built a decision matrix for RDS and DynamoDB.
+- Drew a sample ERD.
+- Designed a DynamoDB key using `(station_id, timestamp)`.
+- Distinguished Query from Scan and Multi-AZ from read replicas.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+## Self-review questions
+
+- Why is DynamoDB Query generally preferable to Scan?
+- Is Multi-AZ a read replica for read scaling?
+- How do access patterns affect partition-key design?
+
+## Learning resources
+
+- [Amazon RDS Getting Started](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.html)
+- [RDS High Availability](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
+- [DynamoDB Core Components](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html)
+- [DynamoDB Getting Started](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html)

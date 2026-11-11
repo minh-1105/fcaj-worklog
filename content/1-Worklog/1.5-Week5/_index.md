@@ -1,57 +1,58 @@
 ---
 title: "Week 5 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# Week 5 — Networking: VPCs, Subnets, Routing, and Endpoints
 
-### Week 5 Objectives:
+## Weekly objective
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Understand how addressing, routing, and access controls determine network flows in AWS.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Learning plan
 
+| Session | Theory topic |
+|---:|---|
+| 1 | IPv4/CIDR, VPCs, subnets, address planning, and Availability Zones. |
+| 2 | Route tables, local routes, Internet Gateways, and NAT Gateways. |
+| 3 | Public and private subnets differ through routing, not merely by name. |
+| 4 | Stateful Security Groups versus stateless Network ACLs. |
+| 5 | VPC Endpoints: S3 Gateway and Interface Endpoints; DNS, connectivity, and cost. |
 
-### Week 5 Achievements:
+## Setup to understand
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Model the process of selecting a VPC CIDR and defining public/private subnets in two AZs, route tables, an Internet Gateway, Security Groups, and endpoints. Do not create a NAT Gateway only for experimentation.
 
-* Successfully created and configured an AWS Free Tier account.
+## Basic commands to understand
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+The commands below are for recognizing syntax and purpose; they do not need to be run without a suitable environment and permissions.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+```bash
+aws ec2 describe-vpcs
+aws ec2 describe-subnets
+aws ec2 describe-route-tables
+aws ec2 describe-vpc-endpoints
+```
 
-* Used AWS CLI to perform basic operations such as:
+## Learning outcomes
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+- Completed an IP plan and a two-AZ VPC diagram.
+- Explained the packet flow from EC2 to S3 through a Gateway Endpoint.
+- Compared Security Groups and Network ACLs.
+- Explained what makes a subnet public.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+## Self-review questions
+
+- What makes a subnet public?
+- How do Security Groups and Network ACLs process traffic differently?
+- When can a VPC Endpoint avoid the need for a NAT Gateway?
+
+## Learning resources
+
+- [Plan your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-getting-started.html)
+- [VPC Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)
+- [Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+- [S3 Gateway Endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html)

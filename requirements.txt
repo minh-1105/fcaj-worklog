@@ -1,0 +1,11 @@
+# Runtime requirements for this repository
+#
+# This is a Hugo static site; it has no Python or Node.js dependencies.
+# Install the following command-line tools:
+#
+# - Hugo Extended 0.25 or newer (tested here with 0.134.3)
+# - Git 2.0 or newer (needed to fetch/update the theme submodule)
+#
+# The theme is vendored in themes/hugo-theme-learn, so a fresh clone should
+# also initialize submodules when the directory is not already populated:
+#   git submodule update --init --recursive

@@ -1,59 +1,58 @@
 ---
 title: "Worklog Tuần 3"
 date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Tuần 3 — Compute: EC2, EBS và Systems Manager
 
-### Mục tiêu tuần 3:
+## Mục tiêu tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Hiểu vòng đời máy ảo, lưu trữ block và cách quản trị EC2 an toàn.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Nội dung học tập
 
+| Buổi | Nội dung lý thuyết |
+|---:|---|
+| 1 | EC2, AMI, instance family/type, vCPU/RAM và shared tenancy. |
+| 2 | On-Demand, Savings Plans, Spot Instances và các yếu tố ảnh hưởng chi phí. |
+| 3 | EBS volume, snapshot, instance store và persistence. |
+| 4 | Security Group, instance profile, SSH và Systems Manager Session Manager. |
+| 5 | Vòng đời EC2: launch, reboot, stop, start, terminate; cleanup và public IPv4 charges. |
 
-### Kết quả đạt được tuần 3:
+## Setup cần biết
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Đọc quy trình chọn Region, AMI, instance type, VPC/subnet, security group, IAM instance profile, storage và tags. Session Manager cần SSM Agent, IAM permissions và network connectivity phù hợp.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Lệnh cơ bản để đọc hiểu
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+Các lệnh dưới đây dùng để nhận diện cú pháp và tác dụng; không cần chạy nếu chưa có môi trường hoặc quyền phù hợp.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+```bash
+aws ec2 describe-instances --region ap-southeast-1
+aws ec2 describe-volumes --region ap-southeast-1
+aws ec2 describe-security-groups --region ap-southeast-1
+aws ssm describe-instance-information --region ap-southeast-1
+```
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+## Kết quả đạt được
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Vẽ sơ đồ quan hệ EC2, EBS, Security Group và IAM role.
+- So sánh Stop, Reboot và Terminate.
+- Giải thích các nguyên nhân phổ biến khiến EC2 không kết nối được.
+- Mô tả khác biệt giữa SSH và Session Manager.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Câu hỏi tự kiểm tra
 
+- Dừng EC2 thì EBS có còn tính phí không?
+- Security Group stateful nghĩa là gì?
+- Session Manager cần những điều kiện nào?
 
+## Nguồn học
+
+- [What is Amazon EC2?](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
+- [EC2 Getting Started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
+- [Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
+- [Session Manager setup](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started.html)

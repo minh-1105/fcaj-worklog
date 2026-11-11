@@ -1,59 +1,47 @@
 ---
 title: "Worklog Tuần 11"
 date: 2024-01-01
-weight: 2
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Tuần 11 — Security, Cost Optimization và Well-Architected
 
-### Mục tiêu tuần 11:
+## Mục tiêu tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Đánh giá kiến trúc theo bảo mật, độ tin cậy, hiệu năng, vận hành và chi phí mà không cần triển khai.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Nội dung học tập
 
+| Buổi | Nội dung lý thuyết |
+|---:|---|
+| 1 | Sáu trụ cột của AWS Well-Architected Framework. |
+| 2 | Defense in depth, least privilege, encryption at rest và in transit. |
+| 3 | Availability, durability, fault tolerance, backup, RTO và RPO. |
+| 4 | Cost drivers: compute, storage, requests, data transfer, NAT và logs. |
+| 5 | Trade-offs, Architecture Decision Record và reference architecture. |
 
-### Kết quả đạt được tuần 11:
+## Setup cần biết
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Đọc cách sử dụng AWS Pricing Calculator và nhập các giả định chi phí. Không cần tạo workload.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Kết quả đạt được
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Hoàn thành checklist Well-Architected mẫu.
+- Lập bảng risk và mitigation.
+- Viết hai ADR về lựa chọn database và network pattern.
+- Nhận diện các cost driver chính của kiến trúc.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+## Câu hỏi tự kiểm tra
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Chi phí nào có thể còn khi EC2 dừng?
+- High availability khác disaster recovery thế nào?
+- RTO và RPO trả lời hai câu hỏi gì?
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+## Nguồn học
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/)
+- [AWS Architecture Center](https://aws.amazon.com/architecture/)
+- [AWS Pricing Calculator](https://calculator.aws/)
+- [AWS Cost Management](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-getting-started.html)

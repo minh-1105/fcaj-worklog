@@ -1,59 +1,57 @@
 ---
 title: "Worklog Tuần 7"
 date: 2024-01-01
-weight: 1
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Tuần 7 — Serverless: Lambda, API Gateway và Event-Driven Architecture
 
-### Mục tiêu tuần 7:
+## Mục tiêu tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Hiểu kiến trúc HTTP API và xử lý sự kiện mà không phải quản trị server.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Nội dung học tập
 
+| Buổi | Nội dung lý thuyết |
+|---:|---|
+| 1 | Serverless, event-driven và Lambda execution environment. |
+| 2 | Lambda handler, event/context, timeout, memory, cold start và concurrency. |
+| 3 | API Gateway HTTP API, route, integration, authentication/authorization và CORS. |
+| 4 | Lambda execution role, least privilege và AWS SDK truy vấn DynamoDB. |
+| 5 | Error handling, retry, idempotency; synchronous và asynchronous invocation. |
 
-### Kết quả đạt được tuần 7:
+## Setup cần biết
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Đọc trình tự tạo Lambda, execution role, HTTP API, route/integration và xem CloudWatch Logs. Không bắt buộc deploy.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Lệnh cơ bản để đọc hiểu
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+Các lệnh dưới đây dùng để nhận diện cú pháp và tác dụng; không cần chạy nếu chưa có môi trường hoặc quyền phù hợp.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+```bash
+aws lambda list-functions
+aws lambda get-function --function-name FUNCTION_NAME
+aws apigatewayv2 get-apis
+```
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+## Kết quả đạt được
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Vẽ sequence diagram `Client → API Gateway → Lambda → DynamoDB`.
+- Phân biệt lỗi 4xx và 5xx.
+- Giải thích quyền `dynamodb:PutItem` và `dynamodb:Query`.
+- Phân biệt Lambda gọi DynamoDB với DynamoDB Streams kích hoạt Lambda.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Câu hỏi tự kiểm tra
 
+- Lambda cần execution role để làm gì?
+- CORS giải quyết vấn đề nào?
+- Retry có thể tạo duplicate record không?
 
+## Nguồn học
+
+- [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+- [Lambda Best Practices](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html)
+- [API Gateway HTTP API](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html)
+- [DynamoDB Getting Started](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html)

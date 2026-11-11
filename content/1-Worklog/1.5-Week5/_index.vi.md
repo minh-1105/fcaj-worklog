@@ -1,59 +1,58 @@
 ---
 title: "Worklog Tuần 5"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Tuần 5 — Networking: VPC, Subnet, Routing và Endpoints
 
-### Mục tiêu tuần 5:
+## Mục tiêu tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Hiểu cách địa chỉ, routing và kiểm soát truy cập tạo nên luồng mạng trong AWS.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Nội dung học tập
 
+| Buổi | Nội dung lý thuyết |
+|---:|---|
+| 1 | IPv4/CIDR, VPC, subnet, phân chia địa chỉ và Availability Zone. |
+| 2 | Route table, local route, Internet Gateway và NAT Gateway. |
+| 3 | Public/private subnet: khác nhau ở routing, không chỉ ở tên. |
+| 4 | Security Group stateful so với Network ACL stateless. |
+| 5 | VPC Endpoint: S3 Gateway Endpoint và Interface Endpoint; DNS, connectivity và chi phí. |
 
-### Kết quả đạt được tuần 5:
+## Setup cần biết
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Mô phỏng quy trình chọn VPC CIDR, tạo public/private subnet ở hai AZ, route table, Internet Gateway, Security Group và endpoint. Không tạo NAT Gateway chỉ để thử.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Lệnh cơ bản để đọc hiểu
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+Các lệnh dưới đây dùng để nhận diện cú pháp và tác dụng; không cần chạy nếu chưa có môi trường hoặc quyền phù hợp.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+```bash
+aws ec2 describe-vpcs
+aws ec2 describe-subnets
+aws ec2 describe-route-tables
+aws ec2 describe-vpc-endpoints
+```
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+## Kết quả đạt được
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Hoàn thành bảng IP plan và sơ đồ VPC hai AZ.
+- Diễn giải luồng gói tin EC2 đến S3 qua Gateway Endpoint.
+- So sánh Security Group và Network ACL.
+- Giải thích yếu tố làm một subnet trở thành public.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Câu hỏi tự kiểm tra
 
+- Subnet nào được gọi là public?
+- Security Group và Network ACL xử lý traffic khác nhau thế nào?
+- Khi nào VPC Endpoint giúp tránh NAT Gateway?
 
+## Nguồn học
+
+- [Plan your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-getting-started.html)
+- [VPC Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)
+- [Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+- [S3 Gateway Endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html)

@@ -1,59 +1,62 @@
 ---
 title: "Worklog Tuần 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Tuần 2 — AWS Account, IAM, STS, CLI và Budget
 
-### Mục tiêu tuần 2:
+## Mục tiêu tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Hiểu danh tính, xác thực, phân quyền và các công cụ cơ bản để thao tác với AWS.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Nội dung học tập
 
+| Buổi | Nội dung lý thuyết |
+|---:|---|
+| 1 | Root user, MFA, IAM user/group/role và IAM Identity Center. |
+| 2 | Cấu trúc JSON policy: Version, Statement, Effect, Action, Resource và Condition. |
+| 3 | Allow, implicit deny, explicit deny; identity-based policy, resource-based policy, permissions boundary và SCP. |
+| 4 | Temporary credentials, STS AssumeRole, AWS CLI profile và Region. |
+| 5 | Least privilege; AWS Budgets, Cost Explorer và giới hạn của cảnh báo ngân sách. |
 
-### Kết quả đạt được tuần 2:
+## Setup cần biết
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Đọc các bước bảo vệ root bằng MFA, ưu tiên IAM Identity Center, cài AWS CLI v2, cấu hình SSO profile và tạo Budget. Budget không phải hard spending cap.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Lệnh cơ bản để đọc hiểu
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+Các lệnh dưới đây dùng để nhận diện cú pháp và tác dụng; không cần chạy nếu chưa có môi trường hoặc quyền phù hợp.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+```bash
+aws --version
+aws configure list
+aws configure sso --profile learning
+aws sso login --profile learning
+aws sts get-caller-identity --profile learning
+aws ec2 describe-regions --profile learning
+```
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+## Kết quả đạt được
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Giải thích các trường chính trong IAM policy.
+- Vẽ quan hệ giữa user, role và policy.
+- Viết checklist bảo mật tài khoản.
+- Nhận diện cách AWS CLI xác định profile, Region và danh tính gọi API.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Câu hỏi tự kiểm tra
 
+- Khi nào nên dùng IAM role?
+- Explicit deny ảnh hưởng Allow như thế nào?
+- Vì sao `iam:PassRole` khác `iam:CreateRole`?
 
+## Nguồn học
+
+- [IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
+- [IAM JSON policy elements](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
+- [AWS CLI v2 installation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [Configure IAM Identity Center for the CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
+- [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)

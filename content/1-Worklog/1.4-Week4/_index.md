@@ -1,57 +1,59 @@
 ---
 title: "Week 4 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# Week 4 — Amazon S3 and Object Storage
 
-### Week 4 Objectives:
+## Weekly objective
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Understand the structure, access controls, protection, and lifecycle of S3 objects.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Learning plan
 
+| Session | Theory topic |
+|---:|---|
+| 1 | Buckets, objects, keys, namespaces, consistency; object versus block/file storage. |
+| 2 | S3 storage classes and storage, request, and retrieval charges. |
+| 3 | IAM policies, bucket policies, S3 Block Public Access, and presigned URLs. |
+| 4 | Versioning, delete markers, noncurrent versions, SSE-S3, and SSE-KMS. |
+| 5 | Lifecycle transitions/expiration, replication, and cost control. |
 
-### Week 4 Achievements:
+## Setup to understand
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Review how to create a private bucket, enable Block Public Access and versioning, and inspect encryption and lifecycle settings. No real bucket is required.
 
-* Successfully created and configured an AWS Free Tier account.
+## Basic commands to understand
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+The commands below are for recognizing syntax and purpose; they do not need to be run without a suitable environment and permissions.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+```bash
+aws s3 ls
+aws s3 ls s3://BUCKET_NAME
+aws s3 cp sample.txt s3://BUCKET_NAME/sample.txt
+aws s3 sync ./data s3://BUCKET_NAME/data/
+aws s3api get-bucket-versioning --bucket BUCKET_NAME
+```
 
-* Used AWS CLI to perform basic operations such as:
+## Learning outcomes
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+- Compared S3 storage classes.
+- Drew the request flow to a private bucket.
+- Explained versioning, delete markers, and lifecycle rules.
+- Distinguished IAM policies from bucket policies.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+## Self-review questions
+
+- Why does deleting an object not necessarily delete every version?
+- How is a bucket policy different from an IAM policy?
+- When should a presigned URL be used?
+
+## Learning resources
+
+- [What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+- [S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)
+- [S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)
+- [S3 Security Best Practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)

@@ -5,53 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# Week 1 — Cloud Fundamentals and AWS Global Infrastructure
 
-### Week 1 Objectives:
+## Weekly objective
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Understand cloud models and AWS infrastructure before studying individual services.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Learning plan
 
+| Session | Theory topic |
+|---:|---|
+| 1 | Cloud computing; on-premises versus cloud; IaaS, PaaS, and SaaS. |
+| 2 | CapEx and OpEx; elasticity, scalability, and high availability. |
+| 3 | Regions, Availability Zones, Edge Locations, and points of presence. |
+| 4 | The Shared Responsibility Model; compute, storage, networking, database, and security service groups. |
+| 5 | Basic pricing, AWS Free Tier/credits, and how to read AWS documentation. |
 
-### Week 1 Achievements:
+## Setup to understand
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Review how to sign in to the AWS Console, select a Region, find services, and open the Billing dashboard. No resources need to be created.
 
-* Successfully created and configured an AWS Free Tier account.
+## Learning outcomes
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Created a comparison of cloud and on-premises environments.
+- Drew a mind map of AWS service groups.
+- Explained AWS and customer responsibilities with examples.
+- Distinguished elasticity, scalability, and high availability.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+## Self-review questions
 
-* Used AWS CLI to perform basic operations such as:
+- How is a Region different from an Availability Zone?
+- Does high availability necessarily mean Auto Scaling?
+- Who is responsible for patching the operating system on EC2?
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+## Learning resources
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- [AWS Cloud Practitioner learning resources](https://aws.amazon.com/training/learn-about/cloud-practitioner/)
+- [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
+- [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
+- [AWS Pricing Overview](https://aws.amazon.com/pricing/)

@@ -1,58 +1,75 @@
 ---
 title: "Worklog Tuần 12"
 date: 2024-01-01
-weight: 2
+weight: 12
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-### Mục tiêu tuần 12:
+# Tuần 12 — Capstone lý thuyết: IoT Weather Platform
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+## Mục tiêu tuần
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+Tổng hợp kiến thức bằng cách thiết kế, giải thích và phản biện một kiến trúc IoT mà không triển khai lên AWS.
 
+## Nội dung học tập
 
-### Kết quả đạt được tuần 12:
+| Buổi | Nội dung lý thuyết |
+|---:|---|
+| 1 | Xác định yêu cầu chức năng và phi chức năng cho nền tảng thời tiết. |
+| 2 | Thiết kế ingest flow: Device → IoT Core → S3 và Lambda → DynamoDB. |
+| 3 | Thiết kế read API: Client → API Gateway → Lambda → DynamoDB. |
+| 4 | Phân tích IAM, failure modes, CloudWatch, cost estimate và cleanup plan giả định. |
+| 5 | Hoàn thiện sơ đồ, ADR, bản giải thích và câu hỏi phản biện. |
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Setup cần biết
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+Không triển khai tài nguyên. Chỉ sử dụng tài liệu, sơ đồ và AWS Pricing Calculator để phân tích kiến trúc logic.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+## Mô hình tham khảo
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+```text
+Device Simulator
+      |
+      | MQTT
+      v
+ AWS IoT Core
+      |
+      v
+   IoT Rule
+   /      \
+  v        v
+ S3     Lambda (validate)
+Raw data    |
+            v
+         DynamoDB
+            ^
+            |
+         Lambda
+            ^
+            |
+       API Gateway
+            ^
+            |
+          Client
+```
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+## Kết quả đạt được
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Hoàn thành architecture diagram và data-flow explanation.
+- Lập bảng chức năng và lý do chọn từng dịch vụ.
+- Lập bảng rủi ro: mất mạng, dữ liệu trùng, lỗi quyền, chi phí và lộ certificate.
+- Viết bài tổng kết kiến thức đã hiểu và hướng học tiếp theo.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Câu hỏi tự kiểm tra
 
+- Làm sao xử lý telemetry bị gửi trùng?
+- Thành phần nào cần IAM role và thành phần nào dùng IoT policy?
+- Nếu Lambda ghi DynamoDB thất bại, hệ thống cần quan sát và phục hồi thế nào?
 
+## Nguồn học
+
+- [AWS Architecture Center](https://aws.amazon.com/architecture/)
+- [AWS SAM Developer Guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/)
+- [AWS IoT Core Getting Started](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html)
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/)

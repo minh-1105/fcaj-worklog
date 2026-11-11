@@ -1,59 +1,61 @@
 ---
 title: "Worklog Tuần 10"
 date: 2024-01-01
-weight: 2
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Tuần 10 — AWS IoT Core, MQTT và Data Pipeline
 
-### Mục tiêu tuần 10:
+## Mục tiêu tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Hiểu cách telemetry đi từ thiết bị vào các dịch vụ lưu trữ và xử lý trên AWS.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Nội dung học tập
 
+| Buổi | Nội dung lý thuyết |
+|---:|---|
+| 1 | IoT concepts, MQTT, broker, publish/subscribe, topic và QoS. |
+| 2 | AWS IoT Thing, X.509 certificate, IoT policy, client ID và topic authorization. |
+| 3 | IoT Rule, rule action, IAM role và luồng telemetry vào S3 hoặc Lambda. |
+| 4 | S3 raw data, object key design, retry/idempotency và small-files problem. |
+| 5 | Glue Data Catalog, crawler, ETL và sự khác biệt với S3 storage. |
 
-### Kết quả đạt được tuần 10:
+## Setup cần biết
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Đọc quy trình đăng ký Thing, certificate, policy và dùng MQTT test client. Không tạo certificate hoặc thiết bị thật trong phần bắt buộc.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Mô hình tham khảo
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+```text
+weather/station-01/telemetry
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+{
+  "station_id": "station-01",
+  "timestamp": "2026-11-05T07:00:00Z",
+  "temperature_c": 29.4,
+  "humidity_percent": 74
+}
+```
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+## Kết quả đạt được
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Vẽ luồng `Device → IoT Core → Rule → S3`.
+- Vẽ luồng `Device → IoT Core → Rule → Lambda → DynamoDB`.
+- Giải thích vai trò của IoT policy, IAM role và Glue crawler.
+- Thiết kế topic và JSON payload cho trạm thời tiết.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Câu hỏi tự kiểm tra
 
+- IoT policy khác IAM policy như thế nào?
+- Vì sao phải giới hạn quyền publish/subscribe theo topic?
+- Glue crawler lưu dữ liệu hay metadata?
 
+## Nguồn học
+
+- [AWS IoT Core Overview](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html)
+- [IoT Core Getting Started](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html)
+- [AWS IoT Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html)
+- [AWS Glue Overview](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
+- [Glue Crawlers](https://docs.aws.amazon.com/glue/latest/dg/add-crawler.html)

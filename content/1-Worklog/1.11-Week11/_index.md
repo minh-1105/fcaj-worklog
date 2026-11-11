@@ -1,57 +1,47 @@
 ---
 title: "Week 11 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# Week 11 — Security, Cost Optimization, and Well-Architected
 
-### Week 11 Objectives:
+## Weekly objective
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Evaluate architecture for security, reliability, performance, operations, and cost without deployment.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Learning plan
 
+| Session | Theory topic |
+|---:|---|
+| 1 | The six pillars of the AWS Well-Architected Framework. |
+| 2 | Defense in depth, least privilege, and encryption at rest and in transit. |
+| 3 | Availability, durability, fault tolerance, backups, RTO, and RPO. |
+| 4 | Cost drivers: compute, storage, requests, data transfer, NAT, and logs. |
+| 5 | Trade-offs, Architecture Decision Records, and reference architectures. |
 
-### Week 11 Achievements:
+## Setup to understand
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Review how to use AWS Pricing Calculator and enter cost assumptions. No workload needs to be created.
 
-* Successfully created and configured an AWS Free Tier account.
+## Learning outcomes
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Completed a sample Well-Architected checklist.
+- Prepared a risk-and-mitigation table.
+- Wrote two ADRs for database and network-pattern choices.
+- Identified the main cost drivers of the architecture.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+## Self-review questions
 
-* Used AWS CLI to perform basic operations such as:
+- What costs can remain while EC2 is stopped?
+- How does high availability differ from disaster recovery?
+- What different questions do RTO and RPO answer?
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+## Learning resources
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/)
+- [AWS Architecture Center](https://aws.amazon.com/architecture/)
+- [AWS Pricing Calculator](https://calculator.aws/)
+- [AWS Cost Management](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-getting-started.html)

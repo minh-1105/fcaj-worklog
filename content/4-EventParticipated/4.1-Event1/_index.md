@@ -6,11 +6,8 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “Buildrathon Kickoff: Code The Future with CMC Global”
 
 ### Event Objectives
 
@@ -21,9 +18,9 @@ pre: " <b> 4.1. </b> "
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Thien Lu** – Program Manager FCAJ
+- **Truong Bui** – Tech Lead CMC Global
+- **Phong Pham** – Program Manager FCAJ
 
 ### Key Highlights
 

@@ -5,55 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Tuần 1 — Cloud Fundamentals và AWS Global Infrastructure
 
-### Mục tiêu tuần 1:
+## Mục tiêu tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Hiểu mô hình cloud và cấu trúc hạ tầng AWS trước khi học các dịch vụ riêng lẻ.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Nội dung học tập
 
+| Buổi | Nội dung lý thuyết |
+|---:|---|
+| 1 | Cloud computing; so sánh on-premises và cloud; IaaS, PaaS và SaaS. |
+| 2 | CapEx và OpEx; elasticity, scalability và high availability. |
+| 3 | Region, Availability Zone, Edge Location và điểm hiện diện. |
+| 4 | Shared Responsibility Model; phân loại compute, storage, networking, database và security. |
+| 5 | Pricing cơ bản, AWS Free Tier/credits và cách đọc tài liệu AWS. |
 
-### Kết quả đạt được tuần 1:
+## Setup cần biết
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Đọc quy trình đăng nhập AWS Console, chọn Region, tìm dịch vụ và mở Billing dashboard. Không cần tạo tài nguyên.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Kết quả đạt được
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Lập bảng so sánh cloud và on-premises.
+- Vẽ mind map các nhóm dịch vụ AWS.
+- Giải thích bằng ví dụ trách nhiệm của AWS và khách hàng.
+- Phân biệt elasticity, scalability và high availability.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+## Câu hỏi tự kiểm tra
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Region khác Availability Zone như thế nào?
+- High availability có đồng nghĩa với Auto Scaling không?
+- Ai chịu trách nhiệm cập nhật hệ điều hành trên EC2?
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+## Nguồn học
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- [AWS Cloud Practitioner learning resources](https://aws.amazon.com/training/learn-about/cloud-practitioner/)
+- [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
+- [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
+- [AWS Pricing Overview](https://aws.amazon.com/pricing/)
