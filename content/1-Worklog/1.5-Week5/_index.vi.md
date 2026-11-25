@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
+date: 2026-10-10
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.5. </b> "
 
 # Tuần 5 — Networking: VPC, Subnet, Routing và Endpoints
 
+**Thời gian:** 10/10/2026 – 15/10/2026
+
 ## Mục tiêu tuần
 
 Hiểu cách địa chỉ, routing và kiểm soát truy cập tạo nên luồng mạng trong AWS.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | IPv4/CIDR, VPC, subnet, phân chia địa chỉ và Availability Zone. |
-| 2 | Route table, local route, Internet Gateway và NAT Gateway. |
-| 3 | Public/private subnet: khác nhau ở routing, không chỉ ở tên. |
-| 4 | Security Group stateful so với Network ACL stateless. |
-| 5 | VPC Endpoint: S3 Gateway Endpoint và Interface Endpoint; DNS, connectivity và chi phí. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Bảy, 10/10/2026 | IPv4/CIDR, VPC, subnet, phân chia địa chỉ và Availability Zone. |
+| 2 | Thứ Hai, 12/10/2026 | Route table, local route, Internet Gateway và NAT Gateway. |
+| 3 | Thứ Ba, 13/10/2026 | Public/private subnet: khác nhau ở routing, không chỉ ở tên. |
+| 4 | Thứ Tư, 14/10/2026 | Security Group stateful so với Network ACL stateless. |
+| 5 | Thứ Năm, 15/10/2026 | VPC Endpoint: S3 Gateway Endpoint và Interface Endpoint; DNS, connectivity và chi phí. |
 
 ## Setup cần biết
 

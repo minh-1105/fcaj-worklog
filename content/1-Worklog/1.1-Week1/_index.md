@@ -1,6 +1,6 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-09-15
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.1. </b> "
 
 # Week 1 — Cloud Fundamentals and AWS Global Infrastructure
 
+**Timeline:** 15/09/2026 – 21/09/2026
+
 ## Weekly objective
 
 Understand cloud models and AWS infrastructure before studying individual services.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | Cloud computing; on-premises versus cloud; IaaS, PaaS, and SaaS. |
-| 2 | CapEx and OpEx; elasticity, scalability, and high availability. |
-| 3 | Regions, Availability Zones, Edge Locations, and points of presence. |
-| 4 | The Shared Responsibility Model; compute, storage, networking, database, and security service groups. |
-| 5 | Basic pricing, AWS Free Tier/credits, and how to read AWS documentation. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Tue, 15/09/2026 | Cloud computing; on-premises versus cloud; IaaS, PaaS, and SaaS. |
+| 2 | Wed, 16/09/2026 | CapEx and OpEx; elasticity, scalability, and high availability. |
+| 3 | Thu, 17/09/2026 | Regions, Availability Zones, Edge Locations, and points of presence. |
+| 4 | Fri, 18/09/2026 | The Shared Responsibility Model; compute, storage, networking, database, and security service groups. |
+| 5 | Mon, 21/09/2026 | Basic pricing, AWS Free Tier/credits, and how to read AWS documentation. |
 
 ## Setup to understand
 

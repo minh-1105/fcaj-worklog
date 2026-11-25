@@ -1,31 +1,30 @@
 ---
-title: "Workshop"
-date: 2024-01-01
-weight: 5
-chapter: false
-pre: " <b> 5. </b> "
+title : "Workshop"
+date : 2024-01-01
+weight : 5
+chapter : false
+pre : " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Deploying a Serverless Marketplace Backend on AWS: Student Market
 
 #### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+This workshop deploys the AWS backend of **Student Market** — a secondhand marketplace for students — using AWS SAM and CloudFormation. The steps build:
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
++ **Media pipeline** — browsers upload images directly to a private **Amazon S3** bucket with presigned URLs; an **AWS Lambda** function converts them to WebP; **Amazon CloudFront** delivers only the processed images.
++ **Serverless API** — an ASP.NET Core 8 API running on **AWS Lambda** behind an **Amazon API Gateway** HTTP API, reading its secrets from **AWS Systems Manager Parameter Store**.
++ **Edge security** — **AWS WAF** in front of CloudFront, with the API reachable only through CloudFront.
++ **Monitoring** — **Amazon CloudWatch** alarms, **Amazon SNS** email alerts, an **Amazon SQS** failure queue, and **AWS CloudTrail**.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+The frontend (Vercel) and the PostgreSQL database (Supabase) run outside AWS and are only connected to the stacks deployed here.
 
-#### Content
+#### Contents
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+1. [Workshop overview](5.1-workshop-overview/)
+2. [Prerequisites](5.2-prerequisites/)
+3. [Media pipeline: S3, Lambda, and CloudFront](5.3-media-pipeline/)
+4. [Serverless API: SSM, Lambda, and API Gateway](5.4-serverless-api/)
+5. [Edge security with AWS WAF](5.5-edge-security/)
+6. [Monitoring and auditing](5.6-monitoring/)
+7. [Clean up resources](5.7-cleanup/)

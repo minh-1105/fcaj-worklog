@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 7"
-date: 2024-01-01
+date: 2026-10-23
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.7. </b> "
 
 # Tuần 7 — Serverless: Lambda, API Gateway và Event-Driven Architecture
 
+**Thời gian:** 23/10/2026 – 28/10/2026
+
 ## Mục tiêu tuần
 
 Hiểu kiến trúc HTTP API và xử lý sự kiện mà không phải quản trị server.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | Serverless, event-driven và Lambda execution environment. |
-| 2 | Lambda handler, event/context, timeout, memory, cold start và concurrency. |
-| 3 | API Gateway HTTP API, route, integration, authentication/authorization và CORS. |
-| 4 | Lambda execution role, least privilege và AWS SDK truy vấn DynamoDB. |
-| 5 | Error handling, retry, idempotency; synchronous và asynchronous invocation. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Sáu, 23/10/2026 | Serverless, event-driven và Lambda execution environment. |
+| 2 | Thứ Bảy, 24/10/2026 | Lambda handler, event/context, timeout, memory, cold start và concurrency. |
+| 3 | Thứ Hai, 26/10/2026 | API Gateway HTTP API, route, integration, authentication/authorization và CORS. |
+| 4 | Thứ Ba, 27/10/2026 | Lambda execution role, least privilege và AWS SDK truy vấn DynamoDB. |
+| 5 | Thứ Tư, 28/10/2026 | Error handling, retry, idempotency; synchronous và asynchronous invocation. |
 
 ## Setup cần biết
 

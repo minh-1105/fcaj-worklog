@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 10"
-date: 2024-01-01
+date: 2026-11-11
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.10. </b> "
 
 # Tuần 10 — AWS IoT Core, MQTT và Data Pipeline
 
+**Thời gian:** 11/11/2026 – 17/11/2026
+
 ## Mục tiêu tuần
 
 Hiểu cách telemetry đi từ thiết bị vào các dịch vụ lưu trữ và xử lý trên AWS.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | IoT concepts, MQTT, broker, publish/subscribe, topic và QoS. |
-| 2 | AWS IoT Thing, X.509 certificate, IoT policy, client ID và topic authorization. |
-| 3 | IoT Rule, rule action, IAM role và luồng telemetry vào S3 hoặc Lambda. |
-| 4 | S3 raw data, object key design, retry/idempotency và small-files problem. |
-| 5 | Glue Data Catalog, crawler, ETL và sự khác biệt với S3 storage. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Tư, 11/11/2026 | IoT concepts, MQTT, broker, publish/subscribe, topic và QoS. |
+| 2 | Thứ Năm, 12/11/2026 | AWS IoT Thing, X.509 certificate, IoT policy, client ID và topic authorization. |
+| 3 | Thứ Sáu, 13/11/2026 | IoT Rule, rule action, IAM role và luồng telemetry vào S3 hoặc Lambda. |
+| 4 | Thứ Hai, 16/11/2026 | S3 raw data, object key design, retry/idempotency và small-files problem. |
+| 5 | Thứ Ba, 17/11/2026 | Glue Data Catalog, crawler, ETL và sự khác biệt với S3 storage. |
 
 ## Setup cần biết
 
@@ -33,7 +35,7 @@ weather/station-01/telemetry
 
 {
   "station_id": "station-01",
-  "timestamp": "2026-11-05T07:00:00Z",
+  "timestamp": "2026-11-12T07:00:00Z",
   "temperature_c": 29.4,
   "humidity_percent": 74
 }

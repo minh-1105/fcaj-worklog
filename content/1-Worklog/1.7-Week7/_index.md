@@ -1,6 +1,6 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
+date: 2026-10-23
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.7. </b> "
 
 # Week 7 — Serverless: Lambda, API Gateway, and Event-Driven Architecture
 
+**Timeline:** 23/10/2026 – 28/10/2026
+
 ## Weekly objective
 
 Understand HTTP API architectures and event processing without managing servers.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | Serverless, event-driven systems, and the Lambda execution environment. |
-| 2 | Lambda handlers, event/context, timeout, memory, cold starts, and concurrency. |
-| 3 | API Gateway HTTP APIs, routes, integrations, authentication/authorization, and CORS. |
-| 4 | Lambda execution roles, least privilege, and using an AWS SDK with DynamoDB. |
-| 5 | Error handling, retries, idempotency, and synchronous versus asynchronous invocation. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Fri, 23/10/2026 | Serverless, event-driven systems, and the Lambda execution environment. |
+| 2 | Sat, 24/10/2026 | Lambda handlers, event/context, timeout, memory, cold starts, and concurrency. |
+| 3 | Mon, 26/10/2026 | API Gateway HTTP APIs, routes, integrations, authentication/authorization, and CORS. |
+| 4 | Tue, 27/10/2026 | Lambda execution roles, least privilege, and using an AWS SDK with DynamoDB. |
+| 5 | Wed, 28/10/2026 | Error handling, retries, idempotency, and synchronous versus asynchronous invocation. |
 
 ## Setup to understand
 

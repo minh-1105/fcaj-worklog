@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 11"
-date: 2024-01-01
+date: 2026-11-18
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.11. </b> "
 
 # Tuần 11 — Security, Cost Optimization và Well-Architected
 
+**Thời gian:** 18/11/2026 – 23/11/2026
+
 ## Mục tiêu tuần
 
 Đánh giá kiến trúc theo bảo mật, độ tin cậy, hiệu năng, vận hành và chi phí mà không cần triển khai.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | Sáu trụ cột của AWS Well-Architected Framework. |
-| 2 | Defense in depth, least privilege, encryption at rest và in transit. |
-| 3 | Availability, durability, fault tolerance, backup, RTO và RPO. |
-| 4 | Cost drivers: compute, storage, requests, data transfer, NAT và logs. |
-| 5 | Trade-offs, Architecture Decision Record và reference architecture. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Tư, 18/11/2026 | Sáu trụ cột của AWS Well-Architected Framework. |
+| 2 | Thứ Năm, 19/11/2026 | Defense in depth, least privilege, encryption at rest và in transit. |
+| 3 | Thứ Sáu, 20/11/2026 | Availability, durability, fault tolerance, backup, RTO và RPO. |
+| 4 | Thứ Bảy, 21/11/2026 | Cost drivers: compute, storage, requests, data transfer, NAT và logs. |
+| 5 | Thứ Hai, 23/11/2026 | Trade-offs, Architecture Decision Record và reference architecture. |
 
 ## Setup cần biết
 

@@ -1,6 +1,6 @@
 ---
 title: "Week 3 Worklog"
-date: 2024-01-01
+date: 2026-09-28
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.3. </b> "
 
 # Week 3 — Compute: EC2, EBS, and Systems Manager
 
+**Timeline:** 28/09/2026 – 02/10/2026
+
 ## Weekly objective
 
 Understand virtual-machine lifecycles, block storage, and secure EC2 administration.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | EC2, AMIs, instance families/types, vCPU/RAM, and shared tenancy. |
-| 2 | On-Demand, Savings Plans, Spot Instances, and cost drivers. |
-| 3 | EBS volumes, snapshots, instance store, and persistence. |
-| 4 | Security Groups, instance profiles, SSH, and Systems Manager Session Manager. |
-| 5 | The EC2 lifecycle: launch, reboot, stop, start, terminate; cleanup and public IPv4 charges. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Mon, 28/09/2026 | EC2, AMIs, instance families/types, vCPU/RAM, and shared tenancy. |
+| 2 | Tue, 29/09/2026 | On-Demand, Savings Plans, Spot Instances, and cost drivers. |
+| 3 | Wed, 30/09/2026 | EBS volumes, snapshots, instance store, and persistence. |
+| 4 | Thu, 01/10/2026 | Security Groups, instance profiles, SSH, and Systems Manager Session Manager. |
+| 5 | Fri, 02/10/2026 | The EC2 lifecycle: launch, reboot, stop, start, terminate; cleanup and public IPv4 charges. |
 
 ## Setup to understand
 

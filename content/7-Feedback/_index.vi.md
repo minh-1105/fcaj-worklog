@@ -5,40 +5,41 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+> Dưới đây là những chia sẻ cá nhân của mình về trải nghiệm khi tham gia chương trình First Cloud AI Journey, với mong muốn giúp team FCAJ hoàn thiện chương trình cho các khóa sau.
 
 ### Đánh giá chung
 
 **1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+Môi trường thân thiện và cởi mở, mọi người sẵn sàng hỗ trợ khi mình gặp khó khăn. Lộ trình 12 tuần được sắp xếp rõ ràng, đi từ nền tảng cloud, IAM, compute, storage, networking đến serverless, IaC, giám sát và bảo mật, nên mình biết mỗi tuần cần tập trung vào đâu.
 
 **2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Mentor giải thích rõ ràng và khuyến khích mình tự tìm hiểu, tự thử trước khi hỏi. Cách hướng dẫn này giúp mình tự xử lý được nhiều vấn đề khi làm dự án Student Market, ví dụ chọn Supabase thay cho RDS để tiết kiệm credit hay chuyển chat realtime sang ECS Fargate khi phát hiện SignalR không chạy được trên API Gateway + Lambda. Team admin hỗ trợ tốt các thủ tục và tài liệu của chương trình.
 
 **3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+Mình học ngành Trí tuệ nhân tạo, nên phần lớn kiến thức về cloud, hạ tầng và bảo mật là mới. Tuy vậy, nền tảng lập trình ở trường giúp mình bắt kịp, và kiến thức cloud là nền tảng cần thiết để triển khai các ứng dụng AI sau này.
 
 **4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+Đây là phần mình thấy giá trị nhất. Qua dự án Student Market, mình được làm trọn một vòng: thiết kế kiến trúc, viết IaC bằng AWS SAM, deploy lên production, cấu hình WAF, SSM Parameter Store, CloudWatch alarm, CloudTrail và theo dõi chi phí bằng AWS Budgets. Ngoài kỹ thuật, mình còn học cách viết worklog, tài liệu deploy và phối hợp với các thành viên khác trong nhóm qua Git.
 
 **5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+Mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn thoải mái. Các bạn trong nhóm sẵn sàng chia sẻ kiến thức và cùng nhau gỡ lỗi khi gặp vấn đề.
 
 **6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
-
+Việc được cấp **$170 credit AWS** để thực hành trên tài khoản thật là điểm cộng lớn, giúp mình học cách vận hành hệ thống thật thay vì chỉ đọc lý thuyết. Các buổi event và workshop của chương trình cũng giúp mình cập nhật kiến thức mới.
 
 ### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
 
+- **Điều bạn hài lòng nhất trong thời gian thực tập?**  
+  Được tự tay đưa một dự án thật lên production trên AWS, từ lúc thiết kế đến lúc bảo mật và giám sát, và hiểu vì sao mỗi dịch vụ được chọn.
+- **Điều bạn nghĩ công ty cần cải thiện cho các thực tập sinh sau?**  
+  Nên có hướng dẫn sớm về giới hạn của gói tài khoản AWS Free (ví dụ không đăng ký được gói CloudFront Free nên WAF phải trả phí) và cách xin cấp quyền IAM, vì nhóm mình mất thời gian chờ quyền trước khi deploy được.
+- **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?**  
+  Có. Chương trình có lộ trình rõ ràng, có credit để thực hành trên AWS thật và có dự án cuối khóa đủ lớn để áp dụng gần như toàn bộ kiến thức đã học.
 
 ### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+
+- Bổ sung một buổi hướng dẫn về **quản lý chi phí và dọn tài nguyên** (Budgets, tag, teardown) ngay từ những tuần đầu, để thực tập sinh tránh tốn credit ngoài ý muốn.
+- Có thêm các buổi **review kiến trúc** giữa kỳ với mentor để phát hiện sớm những lựa chọn không phù hợp (như WebSocket trên Lambda) trước khi triển khai.
+- Chia sẻ thêm template hoặc ví dụ mẫu về **IaC, CI/CD và bảo mật** (WAF, secret, least privilege) để các nhóm có điểm xuất phát chung.
+- Mình mong muốn được tiếp tục tham gia các chương trình tiếp theo của FCAJ, đặc biệt là các nội dung về AI/ML trên AWS để kết hợp với chuyên ngành của mình.
