@@ -1,6 +1,6 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
+date: 2026-10-05
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.4. </b> "
 
 # Week 4 — Amazon S3 and Object Storage
 
+**Timeline:** 05/10/2026 – 09/10/2026
+
 ## Weekly objective
 
 Understand the structure, access controls, protection, and lifecycle of S3 objects.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | Buckets, objects, keys, namespaces, consistency; object versus block/file storage. |
-| 2 | S3 storage classes and storage, request, and retrieval charges. |
-| 3 | IAM policies, bucket policies, S3 Block Public Access, and presigned URLs. |
-| 4 | Versioning, delete markers, noncurrent versions, SSE-S3, and SSE-KMS. |
-| 5 | Lifecycle transitions/expiration, replication, and cost control. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Mon, 05/10/2026 | Buckets, objects, keys, namespaces, consistency; object versus block/file storage. |
+| 2 | Tue, 06/10/2026 | S3 storage classes and storage, request, and retrieval charges. |
+| 3 | Wed, 07/10/2026 | IAM policies, bucket policies, S3 Block Public Access, and presigned URLs. |
+| 4 | Thu, 08/10/2026 | Versioning, delete markers, noncurrent versions, SSE-S3, and SSE-KMS. |
+| 5 | Fri, 09/10/2026 | Lifecycle transitions/expiration, replication, and cost control. |
 
 ## Setup to understand
 

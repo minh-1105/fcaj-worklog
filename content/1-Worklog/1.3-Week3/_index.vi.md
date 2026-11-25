@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
+date: 2026-09-28
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.3. </b> "
 
 # Tuần 3 — Compute: EC2, EBS và Systems Manager
 
+**Thời gian:** 28/09/2026 – 02/10/2026
+
 ## Mục tiêu tuần
 
 Hiểu vòng đời máy ảo, lưu trữ block và cách quản trị EC2 an toàn.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | EC2, AMI, instance family/type, vCPU/RAM và shared tenancy. |
-| 2 | On-Demand, Savings Plans, Spot Instances và các yếu tố ảnh hưởng chi phí. |
-| 3 | EBS volume, snapshot, instance store và persistence. |
-| 4 | Security Group, instance profile, SSH và Systems Manager Session Manager. |
-| 5 | Vòng đời EC2: launch, reboot, stop, start, terminate; cleanup và public IPv4 charges. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Hai, 28/09/2026 | EC2, AMI, instance family/type, vCPU/RAM và shared tenancy. |
+| 2 | Thứ Ba, 29/09/2026 | On-Demand, Savings Plans, Spot Instances và các yếu tố ảnh hưởng chi phí. |
+| 3 | Thứ Tư, 30/09/2026 | EBS volume, snapshot, instance store và persistence. |
+| 4 | Thứ Năm, 01/10/2026 | Security Group, instance profile, SSH và Systems Manager Session Manager. |
+| 5 | Thứ Sáu, 02/10/2026 | Vòng đời EC2: launch, reboot, stop, start, terminate; cleanup và public IPv4 charges. |
 
 ## Setup cần biết
 

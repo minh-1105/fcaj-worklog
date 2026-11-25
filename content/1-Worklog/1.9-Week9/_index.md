@@ -1,6 +1,6 @@
 ---
 title: "Week 9 Worklog"
-date: 2024-01-01
+date: 2026-11-05
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.9. </b> "
 
 # Week 9 — Monitoring, Logging, and Auditing
 
+**Timeline:** 05/11/2026 – 10/11/2026
+
 ## Weekly objective
 
 Distinguish workload observability from auditing API activity in an account.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | Metrics, logs, traces, events, and audit records. |
-| 2 | CloudWatch metrics, logs, dashboards, alarms, and log retention. |
-| 3 | Lambda/API Gateway metrics: invocations, errors, duration, latency, and throttles. |
-| 4 | CloudTrail Event history, management events, data events, and trails. |
-| 5 | A triage runbook for 5xx errors, authorization failures, timeouts, and root-cause analysis. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Thu, 05/11/2026 | Metrics, logs, traces, events, and audit records. |
+| 2 | Fri, 06/11/2026 | CloudWatch metrics, logs, dashboards, alarms, and log retention. |
+| 3 | Sat, 07/11/2026 | Lambda/API Gateway metrics: invocations, errors, duration, latency, and throttles. |
+| 4 | Mon, 09/11/2026 | CloudTrail Event history, management events, data events, and trails. |
+| 5 | Tue, 10/11/2026 | A triage runbook for 5xx errors, authorization failures, timeouts, and root-cause analysis. |
 
 ## Setup to understand
 

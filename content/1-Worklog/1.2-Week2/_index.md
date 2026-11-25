@@ -1,6 +1,6 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
+date: 2026-09-22
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.2. </b> "
 
 # Week 2 — AWS Account, IAM, STS, CLI, and Budgets
 
+**Timeline:** 22/09/2026 – 26/09/2026
+
 ## Weekly objective
 
 Understand identities, authentication, authorization, and the basic tools used to interact with AWS.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | Root user, MFA, IAM users/groups/roles, and IAM Identity Center. |
-| 2 | JSON policy structure: Version, Statement, Effect, Action, Resource, and Condition. |
-| 3 | Allow, implicit deny, explicit deny; identity-based and resource-based policies, permissions boundaries, and SCPs. |
-| 4 | Temporary credentials, STS AssumeRole, AWS CLI profiles, and Regions. |
-| 5 | Least privilege; AWS Budgets, Cost Explorer, and the limits of budget alerts. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Tue, 22/09/2026 | Root user, MFA, IAM users/groups/roles, and IAM Identity Center. |
+| 2 | Wed, 23/09/2026 | JSON policy structure: Version, Statement, Effect, Action, Resource, and Condition. |
+| 3 | Thu, 24/09/2026 | Allow, implicit deny, explicit deny; identity-based and resource-based policies, permissions boundaries, and SCPs. |
+| 4 | Fri, 25/09/2026 | Temporary credentials, STS AssumeRole, AWS CLI profiles, and Regions. |
+| 5 | Sat, 26/09/2026 | Least privilege; AWS Budgets, Cost Explorer, and the limits of budget alerts. |
 
 ## Setup to understand
 

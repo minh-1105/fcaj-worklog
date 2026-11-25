@@ -1,6 +1,6 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
+date: 2026-10-16
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.6. </b> "
 
 # Week 6 — Databases: Amazon RDS and DynamoDB
 
+**Timeline:** 16/10/2026 – 22/10/2026
+
 ## Weekly objective
 
 Choose a relational or NoSQL database based on access patterns and system requirements.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | Relational and NoSQL databases; schemas, transactions, ACID, and indexing. |
-| 2 | RDS instances, storage, backups, DB subnet groups, and connectivity. |
-| 3 | Multi-AZ versus read replicas; high availability versus read scaling. |
-| 4 | DynamoDB tables, items, partition keys, sort keys, Query, Scan, and GSIs. |
-| 5 | On-demand/provisioned capacity, TTL, backups, cost, and a decision matrix. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Fri, 16/10/2026 | Relational and NoSQL databases; schemas, transactions, ACID, and indexing. |
+| 2 | Mon, 19/10/2026 | RDS instances, storage, backups, DB subnet groups, and connectivity. |
+| 3 | Tue, 20/10/2026 | Multi-AZ versus read replicas; high availability versus read scaling. |
+| 4 | Wed, 21/10/2026 | DynamoDB tables, items, partition keys, sort keys, Query, Scan, and GSIs. |
+| 5 | Thu, 22/10/2026 | On-demand/provisioned capacity, TTL, backups, cost, and a decision matrix. |
 
 ## Setup to understand
 

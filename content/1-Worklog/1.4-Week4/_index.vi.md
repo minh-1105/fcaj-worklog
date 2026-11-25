@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
+date: 2026-10-05
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.4. </b> "
 
 # Tuần 4 — Amazon S3 và Object Storage
 
+**Thời gian:** 05/10/2026 – 09/10/2026
+
 ## Mục tiêu tuần
 
 Hiểu cấu trúc, cơ chế truy cập, bảo vệ và vòng đời của S3 objects.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | Bucket, object, key, namespace, consistency; object storage so với block/file storage. |
-| 2 | S3 storage classes và chi phí storage, request, retrieval. |
-| 3 | IAM policy, bucket policy, S3 Block Public Access và presigned URL. |
-| 4 | Versioning, delete marker, noncurrent versions, SSE-S3 và SSE-KMS. |
-| 5 | Lifecycle transitions/expiration, replication và kiểm soát chi phí. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Hai, 05/10/2026 | Bucket, object, key, namespace, consistency; object storage so với block/file storage. |
+| 2 | Thứ Ba, 06/10/2026 | S3 storage classes và chi phí storage, request, retrieval. |
+| 3 | Thứ Tư, 07/10/2026 | IAM policy, bucket policy, S3 Block Public Access và presigned URL. |
+| 4 | Thứ Năm, 08/10/2026 | Versioning, delete marker, noncurrent versions, SSE-S3 và SSE-KMS. |
+| 5 | Thứ Sáu, 09/10/2026 | Lifecycle transitions/expiration, replication và kiểm soát chi phí. |
 
 ## Setup cần biết
 

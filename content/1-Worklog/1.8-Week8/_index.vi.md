@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 8"
-date: 2024-01-01
+date: 2026-10-29
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.8. </b> "
 
 # Tuần 8 — Infrastructure as Code: CloudFormation và AWS SAM
 
+**Thời gian:** 29/10/2026 – 04/11/2026
+
 ## Mục tiêu tuần
 
 Biết đọc template và hiểu vòng đời quản lý hạ tầng bằng mã.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | Infrastructure as Code; declarative, imperative và idempotency. |
-| 2 | CloudFormation template: Resources, Parameters, Outputs và Conditions. |
-| 3 | Stack, change set, update, rollback và drift. |
-| 4 | SAM template, transform, Lambda/API resources, build, package và deploy. |
-| 5 | DeletionPolicy, Retain/Snapshot, stack cleanup và security review. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Năm, 29/10/2026 | Infrastructure as Code; declarative, imperative và idempotency. |
+| 2 | Thứ Sáu, 30/10/2026 | CloudFormation template: Resources, Parameters, Outputs và Conditions. |
+| 3 | Thứ Hai, 02/11/2026 | Stack, change set, update, rollback và drift. |
+| 4 | Thứ Ba, 03/11/2026 | SAM template, transform, Lambda/API resources, build, package và deploy. |
+| 5 | Thứ Tư, 04/11/2026 | DeletionPolicy, Retain/Snapshot, stack cleanup và security review. |
 
 ## Setup cần biết
 

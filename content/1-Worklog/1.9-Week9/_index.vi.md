@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 9"
-date: 2024-01-01
+date: 2026-11-05
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.9. </b> "
 
 # Tuần 9 — Monitoring, Logging và Auditing
 
+**Thời gian:** 05/11/2026 – 10/11/2026
+
 ## Mục tiêu tuần
 
 Phân biệt quan sát sức khỏe workload với theo dõi các hành động API trong tài khoản.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | Metrics, logs, traces, events và audit records. |
-| 2 | CloudWatch metrics, logs, dashboard, alarm và log retention. |
-| 3 | Lambda/API Gateway metrics: invocations, errors, duration, latency và throttles. |
-| 4 | CloudTrail Event history, management events, data events và trail. |
-| 5 | Runbook triage cho lỗi 5xx, auth failure, timeout và phân tích nguyên nhân. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Năm, 05/11/2026 | Metrics, logs, traces, events và audit records. |
+| 2 | Thứ Sáu, 06/11/2026 | CloudWatch metrics, logs, dashboard, alarm và log retention. |
+| 3 | Thứ Bảy, 07/11/2026 | Lambda/API Gateway metrics: invocations, errors, duration, latency và throttles. |
+| 4 | Thứ Hai, 09/11/2026 | CloudTrail Event history, management events, data events và trail. |
+| 5 | Thứ Ba, 10/11/2026 | Runbook triage cho lỗi 5xx, auth failure, timeout và phân tích nguyên nhân. |
 
 ## Setup cần biết
 

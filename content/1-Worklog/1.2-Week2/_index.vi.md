@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 2"
-date: 2024-01-01
+date: 2026-09-22
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.2. </b> "
 
 # Tuần 2 — AWS Account, IAM, STS, CLI và Budget
 
+**Thời gian:** 22/09/2026 – 26/09/2026
+
 ## Mục tiêu tuần
 
 Hiểu danh tính, xác thực, phân quyền và các công cụ cơ bản để thao tác với AWS.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | Root user, MFA, IAM user/group/role và IAM Identity Center. |
-| 2 | Cấu trúc JSON policy: Version, Statement, Effect, Action, Resource và Condition. |
-| 3 | Allow, implicit deny, explicit deny; identity-based policy, resource-based policy, permissions boundary và SCP. |
-| 4 | Temporary credentials, STS AssumeRole, AWS CLI profile và Region. |
-| 5 | Least privilege; AWS Budgets, Cost Explorer và giới hạn của cảnh báo ngân sách. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Ba, 22/09/2026 | Root user, MFA, IAM user/group/role và IAM Identity Center. |
+| 2 | Thứ Tư, 23/09/2026 | Cấu trúc JSON policy: Version, Statement, Effect, Action, Resource và Condition. |
+| 3 | Thứ Năm, 24/09/2026 | Allow, implicit deny, explicit deny; identity-based policy, resource-based policy, permissions boundary và SCP. |
+| 4 | Thứ Sáu, 25/09/2026 | Temporary credentials, STS AssumeRole, AWS CLI profile và Region. |
+| 5 | Thứ Bảy, 26/09/2026 | Least privilege; AWS Budgets, Cost Explorer và giới hạn của cảnh báo ngân sách. |
 
 ## Setup cần biết
 

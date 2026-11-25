@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 6"
-date: 2024-01-01
+date: 2026-10-16
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.6. </b> "
 
 # Tuần 6 — Databases: Amazon RDS và DynamoDB
 
+**Thời gian:** 16/10/2026 – 22/10/2026
+
 ## Mục tiêu tuần
 
 Lựa chọn relational hoặc NoSQL database dựa trên access pattern và yêu cầu hệ thống.
 
 ## Nội dung học tập
 
-| Buổi | Nội dung lý thuyết |
-|---:|---|
-| 1 | Relational và NoSQL; schema, transaction, ACID và indexing. |
-| 2 | RDS instances, storage, backups, DB subnet group và connectivity. |
-| 3 | Multi-AZ so với read replica; high availability so với read scaling. |
-| 4 | DynamoDB table, item, partition key, sort key, Query, Scan và GSI. |
-| 5 | On-demand/provisioned capacity, TTL, backup, chi phí và decision matrix. |
+| Buổi | Ngày | Nội dung |
+|---:|---|---|
+| 1 | Thứ Sáu, 16/10/2026 | Relational và NoSQL; schema, transaction, ACID và indexing. |
+| 2 | Thứ Hai, 19/10/2026 | RDS instances, storage, backups, DB subnet group và connectivity. |
+| 3 | Thứ Ba, 20/10/2026 | Multi-AZ so với read replica; high availability so với read scaling. |
+| 4 | Thứ Tư, 21/10/2026 | DynamoDB table, item, partition key, sort key, Query, Scan và GSI. |
+| 5 | Thứ Năm, 22/10/2026 | On-demand/provisioned capacity, TTL, backup, chi phí và decision matrix. |
 
 ## Setup cần biết
 

@@ -1,6 +1,6 @@
 ---
 title: "Week 8 Worklog"
-date: 2024-01-01
+date: 2026-10-29
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.8. </b> "
 
 # Week 8 — Infrastructure as Code: CloudFormation and AWS SAM
 
+**Timeline:** 29/10/2026 – 04/11/2026
+
 ## Weekly objective
 
 Learn to read templates and understand the lifecycle of infrastructure managed as code.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | Infrastructure as Code; declarative, imperative, and idempotent approaches. |
-| 2 | CloudFormation templates: Resources, Parameters, Outputs, and Conditions. |
-| 3 | Stacks, change sets, updates, rollback, and drift. |
-| 4 | SAM templates, transforms, Lambda/API resources, build, package, and deploy. |
-| 5 | DeletionPolicy, Retain/Snapshot, stack cleanup, and security review. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Thu, 29/10/2026 | Infrastructure as Code; declarative, imperative, and idempotent approaches. |
+| 2 | Fri, 30/10/2026 | CloudFormation templates: Resources, Parameters, Outputs, and Conditions. |
+| 3 | Mon, 02/11/2026 | Stacks, change sets, updates, rollback, and drift. |
+| 4 | Tue, 03/11/2026 | SAM templates, transforms, Lambda/API resources, build, package, and deploy. |
+| 5 | Wed, 04/11/2026 | DeletionPolicy, Retain/Snapshot, stack cleanup, and security review. |
 
 ## Setup to understand
 

@@ -1,6 +1,6 @@
 ---
 title: "Week 5 Worklog"
-date: 2024-01-01
+date: 2026-10-10
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.5. </b> "
 
 # Week 5 — Networking: VPCs, Subnets, Routing, and Endpoints
 
+**Timeline:** 10/10/2026 – 15/10/2026
+
 ## Weekly objective
 
 Understand how addressing, routing, and access controls determine network flows in AWS.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | IPv4/CIDR, VPCs, subnets, address planning, and Availability Zones. |
-| 2 | Route tables, local routes, Internet Gateways, and NAT Gateways. |
-| 3 | Public and private subnets differ through routing, not merely by name. |
-| 4 | Stateful Security Groups versus stateless Network ACLs. |
-| 5 | VPC Endpoints: S3 Gateway and Interface Endpoints; DNS, connectivity, and cost. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Sat, 10/10/2026 | IPv4/CIDR, VPCs, subnets, address planning, and Availability Zones. |
+| 2 | Mon, 12/10/2026 | Route tables, local routes, Internet Gateways, and NAT Gateways. |
+| 3 | Tue, 13/10/2026 | Public and private subnets differ through routing, not merely by name. |
+| 4 | Wed, 14/10/2026 | Stateful Security Groups versus stateless Network ACLs. |
+| 5 | Thu, 15/10/2026 | VPC Endpoints: S3 Gateway and Interface Endpoints; DNS, connectivity, and cost. |
 
 ## Setup to understand
 

@@ -1,6 +1,6 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
+date: 2026-11-11
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.10. </b> "
 
 # Week 10 — AWS IoT Core, MQTT, and Data Pipelines
 
+**Timeline:** 11/11/2026 – 17/11/2026
+
 ## Weekly objective
 
 Understand how telemetry moves from devices into AWS storage and processing services.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | IoT concepts, MQTT, brokers, publish/subscribe, topics, and QoS. |
-| 2 | AWS IoT Things, X.509 certificates, IoT policies, client IDs, and topic authorization. |
-| 3 | IoT Rules, rule actions, IAM roles, and telemetry flows into S3 or Lambda. |
-| 4 | Raw data in S3, object-key design, retries/idempotency, and the small-files problem. |
-| 5 | Glue Data Catalog, crawlers, ETL, and how Glue differs from S3 storage. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Wed, 11/11/2026 | IoT concepts, MQTT, brokers, publish/subscribe, topics, and QoS. |
+| 2 | Thu, 12/11/2026 | AWS IoT Things, X.509 certificates, IoT policies, client IDs, and topic authorization. |
+| 3 | Fri, 13/11/2026 | IoT Rules, rule actions, IAM roles, and telemetry flows into S3 or Lambda. |
+| 4 | Mon, 16/11/2026 | Raw data in S3, object-key design, retries/idempotency, and the small-files problem. |
+| 5 | Tue, 17/11/2026 | Glue Data Catalog, crawlers, ETL, and how Glue differs from S3 storage. |
 
 ## Setup to understand
 
@@ -33,7 +35,7 @@ weather/station-01/telemetry
 
 {
   "station_id": "station-01",
-  "timestamp": "2026-11-05T07:00:00Z",
+  "timestamp": "2026-11-12T07:00:00Z",
   "temperature_c": 29.4,
   "humidity_percent": 74
 }

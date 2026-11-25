@@ -1,6 +1,6 @@
 ---
 title: "Week 11 Worklog"
-date: 2024-01-01
+date: 2026-11-18
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
@@ -8,19 +8,21 @@ pre: " <b> 1.11. </b> "
 
 # Week 11 — Security, Cost Optimization, and Well-Architected
 
+**Timeline:** 18/11/2026 – 23/11/2026
+
 ## Weekly objective
 
 Evaluate architecture for security, reliability, performance, operations, and cost without deployment.
 
 ## Learning plan
 
-| Session | Theory topic |
-|---:|---|
-| 1 | The six pillars of the AWS Well-Architected Framework. |
-| 2 | Defense in depth, least privilege, and encryption at rest and in transit. |
-| 3 | Availability, durability, fault tolerance, backups, RTO, and RPO. |
-| 4 | Cost drivers: compute, storage, requests, data transfer, NAT, and logs. |
-| 5 | Trade-offs, Architecture Decision Records, and reference architectures. |
+| Session | Date | Topic |
+|---:|---|---|
+| 1 | Wed, 18/11/2026 | The six pillars of the AWS Well-Architected Framework. |
+| 2 | Thu, 19/11/2026 | Defense in depth, least privilege, and encryption at rest and in transit. |
+| 3 | Fri, 20/11/2026 | Availability, durability, fault tolerance, backups, RTO, and RPO. |
+| 4 | Sat, 21/11/2026 | Cost drivers: compute, storage, requests, data transfer, NAT, and logs. |
+| 5 | Mon, 23/11/2026 | Trade-offs, Architecture Decision Records, and reference architectures. |
 
 ## Setup to understand
 
