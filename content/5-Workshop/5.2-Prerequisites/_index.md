@@ -20,13 +20,13 @@ Install the following on the local machine (Windows PowerShell is used in all co
 
 #### AWS account and permissions
 
-1. Use an IAM user (not the root user) dedicated to deployment. It needs permissions for CloudFormation, S3, Lambda, API Gateway, IAM roles, SQS, SNS, CloudWatch, CloudFront, WAF, SSM, KMS (through SSM), CloudTrail, and IAM Access Analyzer. 
+1. Use an IAM user (not the root user) dedicated to deployment. It needs permissions for CloudFormation, S3, Lambda, API Gateway, IAM roles, SQS, SNS, CloudWatch, CloudFront, WAF, SSM, KMS (through SSM), CloudTrail, and IAM Access Analyzer.
 2. Configure a named profile and use the **ap-southeast-1** Region:
 
-```powershell
-aws configure --profile student-market
-aws sts get-caller-identity --profile student-market
-```
+   ```powershell
+   aws configure --profile student-market
+   aws sts get-caller-identity --profile student-market
+   ```
 
 3. Create an **AWS Budget** (for example $10/month with an email alert) before deploying anything.
 

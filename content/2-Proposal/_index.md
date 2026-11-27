@@ -7,6 +7,7 @@ pre: " <b> 2. </b> "
 ---
 
 # Student Flea Market
+
 ## A Cloud-Native Secondhand Marketplace for Students
 
 ### 1. Executive Summary

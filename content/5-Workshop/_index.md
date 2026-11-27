@@ -8,7 +8,7 @@ pre : " <b> 5. </b> "
 
 # Deploying a Serverless Marketplace Backend on AWS: Student Market
 
-#### Overview
+## Overview
 
 This workshop deploys the AWS backend of **Student Market** — a secondhand marketplace for students — using AWS SAM and CloudFormation. The steps build:
 
@@ -19,7 +19,7 @@ This workshop deploys the AWS backend of **Student Market** — a secondhand mar
 
 The frontend (Vercel) and the PostgreSQL database (Supabase) run outside AWS and are only connected to the stacks deployed here.
 
-#### Contents
+## Contents
 
 1. [Workshop overview](5.1-workshop-overview/)
 2. [Prerequisites](5.2-prerequisites/)

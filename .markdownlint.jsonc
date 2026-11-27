@@ -1,0 +1,8 @@
+{
+  // Prose content: long lines are fine
+  "MD013": false,
+  // Hugo front matter `title` + page H1 is the theme convention
+  "MD025": { "front_matter_title": "" },
+  // Hugo shortcodes / inline HTML are used in content
+  "MD033": false
+}

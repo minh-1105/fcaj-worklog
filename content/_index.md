@@ -12,14 +12,15 @@ chapter: false
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}} -->
 
-### Student Information:
-&emsp; **Full Name:** Tran Binh Minh    
+## Student Information
 
-&emsp; **Phone Number:** 0903523399 
+&emsp; **Full Name:** Tran Binh Minh
 
-&emsp; **Email:** minhtb1105@gmail.com
+&emsp; **Phone Number:** 0903523399
 
-&emsp; **University:** FPT University   
+&emsp; **Email:** <minhtb1105@gmail.com>
+
+&emsp; **University:** FPT University
 
 &emsp; **Major:** Artificial Intelligence
 
@@ -33,12 +34,12 @@ chapter: false
 
 ![Your profile picture](/images/avatar.png)
 
-### Report Content
+## Report Content
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [BlogsPosted](3-BlogsPosted/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+1. [Worklog](1-Worklog/)
+2. [Proposal](2-Proposal/)
+3. [BlogsPosted](3-BlogsPosted/)
+4. [Events Participated](4-EventParticipated/)
+5. [Workshop](5-Workshop/)
+6. [Self-evaluation](6-Self-evaluation/)
+7. [Sharing and Feedback](7-Feedback/)

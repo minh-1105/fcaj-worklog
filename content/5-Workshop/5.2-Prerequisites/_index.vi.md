@@ -20,13 +20,13 @@ Cài các công cụ sau trên máy (mọi lệnh trong workshop dùng Windows P
 
 #### Tài khoản AWS và quyền
 
-1. Dùng một IAM user riêng để deploy (không dùng root user). User cần quyền với CloudFormation, S3, Lambda, API Gateway, IAM role, SQS, SNS, CloudWatch, CloudFront, WAF, SSM, KMS (thông qua SSM), CloudTrail và IAM Access Analyzer. 
+1. Dùng một IAM user riêng để deploy (không dùng root user). User cần quyền với CloudFormation, S3, Lambda, API Gateway, IAM role, SQS, SNS, CloudWatch, CloudFront, WAF, SSM, KMS (thông qua SSM), CloudTrail và IAM Access Analyzer.
 2. Cấu hình profile và dùng Region **ap-southeast-1**:
 
-```powershell
-aws configure --profile student-market
-aws sts get-caller-identity --profile student-market
-```
+   ```powershell
+   aws configure --profile student-market
+   aws sts get-caller-identity --profile student-market
+   ```
 
 3. Tạo **AWS Budget** (ví dụ $10/tháng, có email cảnh báo) trước khi deploy bất cứ thứ gì.
 

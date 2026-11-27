@@ -7,9 +7,10 @@ pre: " <b> 2. </b> "
 ---
 
 # Student Flea Market
+
 ## Nền tảng chợ đồ cũ Cloud-Native dành cho sinh viên
 
-### 1. Tóm tắt 
+### 1. Tóm tắt
 
 Student Flea Market (Student Market) là nền tảng chợ trực tuyến dành cho sinh viên đại học mua, bán hoặc trao đổi giáo trình, tài liệu học tập, thiết bị điện tử, đồ dùng ký túc xá và các vật dụng đã qua sử dụng. Dự án giải quyết một vấn đề phổ biến: sản phẩm thường được đăng rải rác trên mạng xã hội và nhóm chat, khiến người dùng khó tìm kiếm, so sánh, quản lý và xác minh độ tin cậy.
 

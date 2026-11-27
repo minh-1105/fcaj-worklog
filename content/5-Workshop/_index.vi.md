@@ -8,7 +8,7 @@ pre : " <b> 5. </b> "
 
 # Triển khai backend serverless cho marketplace trên AWS: Student Market
 
-#### Tổng quan
+## Tổng quan
 
 Workshop này triển khai phần backend trên AWS của **Student Market** — chợ đồ cũ dành cho sinh viên — bằng AWS SAM và CloudFormation. Các bước lần lượt dựng:
 
@@ -19,7 +19,7 @@ Workshop này triển khai phần backend trên AWS của **Student Market** —
 
 Frontend (Vercel) và database PostgreSQL (Supabase) chạy ngoài AWS, chỉ được kết nối với các stack triển khai ở đây.
 
-#### Nội dung
+## Nội dung
 
 1. [Tổng quan về workshop](5.1-workshop-overview/)
 2. [Chuẩn bị](5.2-prerequisites/)

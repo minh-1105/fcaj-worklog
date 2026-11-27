@@ -11,8 +11,9 @@ pre: " <b> 4. </b> "
 {{% /notice %}}-->
 
 > In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
+>
 > Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
+>
 > * Event name
 > * Date and time
 > * Location (if applicable)
@@ -24,6 +25,7 @@ pre: " <b> 4. </b> "
 During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
 
 ### [Event 1](4.1-Event1/)  
+
 &emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
 
 &emsp;**Date & Time:** 09:00, August 13, 2025  
@@ -35,6 +37,7 @@ During my internship, I participated in two events. Each one was a memorable exp
 ---
 
 ### [Event 2](4.2-Event2/)  
+
 &emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
 
 &emsp;**Date & Time:** 09:00, August 13, 2025  
