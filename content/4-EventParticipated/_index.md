@@ -6,9 +6,9 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
+<!--{{% notice warning %}}
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
+{{% /notice %}}-->
 
 > In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
 > 
@@ -41,4 +41,4 @@ During my internship, I participated in two events. Each one was a memorable exp
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
-&emsp;**Role:** Attendee  
+&emsp;**Role:** Attendee
